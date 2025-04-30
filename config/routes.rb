@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users #devise関連のルーティンングをすべて設定している。
+  devise_for :users #devise関連のルーティングをすべて設定している。
   root to: "prototypes#index"
   resources :prototypes do
     resources :comments, only: :create
